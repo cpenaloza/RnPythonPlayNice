@@ -8,22 +8,24 @@ editor:
 
 # R & Python play nice, in production
 
-# Dropped into a den of snakes
+Insert clip of Indiana Jones and the Raiders of the Lost Arc when he's looking down 
+into the Chamber of Souls and the entire ground is covered in snakes. He then says "Snakes why did it have to be snakes". 
 
+# Dropped into a den of snakes
 I had been working on a proof of concept for the past year and a half
 when...  
-- Approved for industrialization  
-- Project lead, and my pair-programmer in R, went on parental leave... for two years  
-- The team flipped from 3:1 R to 3:1 Python developers
+-   Approved for industrialization  
+-   Project lead, and my pair-programmer in R, went on parental leave... for two years  
+-   The team flipped from 3:1 R to 3:1 Python developers
 
 # Growing Pains
 
 ## First industrialization of an ML model in RnD... everybody wanted in... many different teams involved  
-- RnD Tire Testing  
-- RnD Data Science  
-- RnD Tire Development  
-- RnD IT  
-- Tires Data Science (me)
+-   RnD Tire Testing  
+-   RnD Data Science  
+-   RnD Tire Development  
+-   RnD IT  
+-   Tires Data Science (me)
 
 # After we got past comments like this one
 
@@ -33,43 +35,43 @@ when...
 # Goal -> Deployed ML prediction model for use in daily tire development
 
 ## Details
-- Where? Deployment infrastructure & systems integration  
-- What? Product  
-- Who? Monitoring & Maintenance
+-   Where? Deployment infrastructure & systems integration  
+-   What? Product  
+-   Who? Monitoring & Maintenance
 
 # No matter how 
 # Ensure it would run, consistently, anywhere
 
 # How?
 ## Day-to-day
-Agree on file type for inputs & outputs
-  .parquet (pre-processed data)
-  DB for model results and predictions
-Develop in comfort zone
-  Code in your favorite language
-Review beyond comfort zone
-  Four-eyes rule
-  Stick to core principles
-    Document your code
-    Functions trump repetitiveness
-    Descriptive naming
+-   Agree on file type for inputs & outputs
+    -   .parquet (pre-processed data)
+    -   DB for model results and predictions
+-   Develop in comfort zone
+    -   Code in your favorite language
+-   Review beyond comfort zone
+    -   Four-eyes rule
+    -   Stick to core principles
+        -   Document your code
+        -   Functions trump repetitiveness
+        -   Descriptive naming
   
 ## Deployment
-Manage environments/dependencies (the packages _YOU_ use, and the packages used by _those packages_)
-  R: renv
-  Python: **poetry** -> uv
-Containerization with Docker
-  Little R or Python world in which you KNOW your scripts run... consistently... anywhere
-Language agnostic MLOps platform (Kubernetes)
-  Orchestrates pipeline steps (nodes) as defined by you. 
-    Spins up containers with your choice of
-      Environment
-      Script
-      Inputs
-      Outputs
+-   Manage environments/dependencies (the packages _YOU_ use, and the packages used by _those packages_)
+    -   R: renv
+    -   Python: ~poetry~ -> uv
+-   Containerization with Docker
+    -   Little R or Python world in which you KNOW your scripts run... consistently... anywhere
+-   Language agnostic MLOps platform (Kubernetes)
+    -   Orchestrates pipeline steps (nodes) as defined by you. 
+        -   Spins up containers with your choice of
+            -   Environment
+            -   Script
+            -   Inputs
+            -   Outputs
     ... in the order you defined (.yaml)
 
-# Challenge completed
+# In production
 ## Industrialized batch prediction as part of tire development
 ## Used by ~100 tire developers
 ## Results overnight (vs. 4 months later)
